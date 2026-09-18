@@ -1,0 +1,6 @@
+{
+  "name": "Four Eleven Car Garage",
+  "description": "Premium luxury automotive garage and bespoke performance center specializing in exotic car care, performance tuning, concourse detailing, and VIP fleet maintenance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

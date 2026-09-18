@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  h1, h2, h3, .font-display {
+    font-family: 'Syne', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-racing {
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Custom metallic silver gradient & specular effects */
+.bg-metallic-silver {
+  background: linear-gradient(135deg, #f8fafc 0%, #cbd5e1 35%, #94a3b8 70%, #e2e8f0 100%);
+}
+
+.text-metallic-silver {
+  background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 45%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-metallic-chrome {
+  background: linear-gradient(145deg, #ffffff 0%, #e2e8f0 30%, #64748b 70%, #f1f5f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-metallic-subtle {
+  border-color: rgba(203, 213, 225, 0.15);
+}
+
+.border-metallic-glow:hover {
+  border-color: rgba(225, 29, 72, 0.5);
+  box-shadow: 0 0 25px -5px rgba(225, 29, 72, 0.25);
+}
+
+/* Luxury garage carbon subtle mesh pattern */
+.bg-carbon-mesh {
+  background-color: #090a0d;
+  background-image: radial-gradient(rgba(225, 29, 72, 0.05) 1px, transparent 0),
+                    radial-gradient(rgba(255, 255, 255, 0.03) 1px, #090a0d 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Hexagon LED studio grid subtle overlay */
+.bg-hex-grid {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #08090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e222b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e11d48;
+}
